@@ -24,8 +24,9 @@
 		8CC5AA17178AE17E00A83391 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA0B178AE17E00A83391 /* InfoPlist.strings */; };
 		8CC5AA18178AE17E00A83391 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA0D178AE17E00A83391 /* main.m */; };
 		8CC5AA19178AE17E00A83391 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA0F178AE17E00A83391 /* SampleViewController.m */; };
-		8CC5AA26178AE7A400A83391 /* JTCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA23178AE7A400A83391 /* JTCardLayout.m */; };
+		8CC5AA26178AE7A400A83391 /* JTCardsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA23178AE7A400A83391 /* JTCardsLayout.m */; };
 		8CC5AA27178AE7A400A83391 /* JTCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA25178AE7A400A83391 /* JTCardsViewController.m */; };
+		8CC5AA55178B848F00A83391 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA54178B848F00A83391 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +64,11 @@
 		8CC5AA0D178AE17E00A83391 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CC5AA0E178AE17E00A83391 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
 		8CC5AA0F178AE17E00A83391 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
-		8CC5AA22178AE7A400A83391 /* JTCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCardLayout.h; sourceTree = "<group>"; };
-		8CC5AA23178AE7A400A83391 /* JTCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCardLayout.m; sourceTree = "<group>"; };
+		8CC5AA22178AE7A400A83391 /* JTCardsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCardsLayout.h; sourceTree = "<group>"; };
+		8CC5AA23178AE7A400A83391 /* JTCardsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCardsLayout.m; sourceTree = "<group>"; };
 		8CC5AA24178AE7A400A83391 /* JTCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCardsViewController.h; sourceTree = "<group>"; };
 		8CC5AA25178AE7A400A83391 /* JTCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCardsViewController.m; sourceTree = "<group>"; };
+		8CC5AA54178B848F00A83391 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		8C5C950E178A3E1D00A0F42A = {
 			isa = PBXGroup;
 			children = (
+				8CC5AA54178B848F00A83391 /* README.md */,
 				8CC5AA21178AE7A400A83391 /* JTCards */,
 				8CC5AA00178AE17E00A83391 /* Example */,
 				8C5C9544178A3E1D00A0F42A /* CardsTests */,
@@ -167,8 +170,8 @@
 		8CC5AA21178AE7A400A83391 /* JTCards */ = {
 			isa = PBXGroup;
 			children = (
-				8CC5AA22178AE7A400A83391 /* JTCardLayout.h */,
-				8CC5AA23178AE7A400A83391 /* JTCardLayout.m */,
+				8CC5AA22178AE7A400A83391 /* JTCardsLayout.h */,
+				8CC5AA23178AE7A400A83391 /* JTCardsLayout.m */,
 				8CC5AA24178AE7A400A83391 /* JTCardsViewController.h */,
 				8CC5AA25178AE7A400A83391 /* JTCardsViewController.m */,
 			);
@@ -251,6 +254,7 @@
 				8CC5AA15178AE17E00A83391 /* Default.png in Resources */,
 				8CC5AA16178AE17E00A83391 /* Default@2x.png in Resources */,
 				8CC5AA17178AE17E00A83391 /* InfoPlist.strings in Resources */,
+				8CC5AA55178B848F00A83391 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +293,7 @@
 				8CC5AA11178AE17E00A83391 /* BViewController.m in Sources */,
 				8CC5AA18178AE17E00A83391 /* main.m in Sources */,
 				8CC5AA19178AE17E00A83391 /* SampleViewController.m in Sources */,
-				8CC5AA26178AE7A400A83391 /* JTCardLayout.m in Sources */,
+				8CC5AA26178AE7A400A83391 /* JTCardsLayout.m in Sources */,
 				8CC5AA27178AE7A400A83391 /* JTCardsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

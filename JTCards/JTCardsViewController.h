@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTCardsLayout.h"
 
 @interface JTCardsViewController : UIViewController
 
-- (id) initWithCardControllers:(NSArray*)cardControllers;
+- (id) initWithCards:(NSArray*)cardControllers;
+- (id) initWithCards:(NSArray*)cardControllers layout:(JTCardsLayout*)layout;
 
 @end

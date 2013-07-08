@@ -17,7 +17,7 @@
  1. showing all views
  2. showing single view
  */
-@interface JTCardLayout : NSObject
+@interface JTCardsLayout : NSObject
 
 // showing all views or focusing on one?
 @property BOOL showingAll;

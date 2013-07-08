@@ -6,15 +6,15 @@
 //  Copyright (c) 2013 jTribe. All rights reserved.
 //
 
-#import "JTCardLayout.h"
+#import "JTCardsLayout.h"
 
-@interface JTCardLayout ()
+@interface JTCardsLayout ()
 
 @property CGPoint startPanLocation;
 
 @end
 
-@implementation JTCardLayout
+@implementation JTCardsLayout
 
 - (id) initWithViews:(NSArray*)views containerView:(UIView*)containerView
 {

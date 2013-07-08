@@ -7,12 +7,12 @@
 //
 
 #import "JTCardsViewController.h"
-#import "JTCardLayout.h"
+#import "JTCardsLayout.h"
 
 @interface JTCardsViewController ()
 @property BOOL showingAll;
 @property (nonatomic,strong) NSMutableArray *cardControllers;
-@property (nonatomic,strong) JTCardLayout *layout;
+@property (nonatomic,strong) JTCardsLayout *layout;
 @end
 
 @implementation JTCardsViewController
@@ -40,7 +40,7 @@
   for (UIViewController *controller in self.childViewControllers) {
     [views addObject:controller.view];
   }
-  self.layout = [[JTCardLayout alloc] initWithViews:views containerView:self.view];
+  self.layout = [[JTCardsLayout alloc] initWithViews:views containerView:self.view];
   [self.layout layoutAllAnimated:NO];
   
 }
