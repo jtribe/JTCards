@@ -16,7 +16,6 @@
 		8C5C952D178A3E1D00A0F42A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C952C178A3E1D00A0F42A /* Default.png */; };
 		8C5C952F178A3E1D00A0F42A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C952E178A3E1D00A0F42A /* Default@2x.png */; };
 		8C5C9531178A3E1D00A0F42A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9530178A3E1D00A0F42A /* Default-568h@2x.png */; };
-		8C5C9534178A3E1D00A0F42A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9532178A3E1D00A0F42A /* MainStoryboard.storyboard */; };
 		8C5C9537178A3E1D00A0F42A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9536178A3E1D00A0F42A /* ViewController.m */; };
 		8C5C953F178A3E1D00A0F42A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C953E178A3E1D00A0F42A /* SenTestingKit.framework */; };
 		8C5C9540178A3E1D00A0F42A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C951A178A3E1D00A0F42A /* UIKit.framework */; };
@@ -38,6 +37,7 @@
 		8C5C9580178A837300A0F42A /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C957F178A837300A0F42A /* CardLayout.m */; };
 		8C5C9584178A8FB700A0F42A /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9582178A8FB700A0F42A /* BViewController.m */; };
 		8C5C9585178A8FB700A0F42A /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9583178A8FB700A0F42A /* BViewController.xib */; };
+		8CC5A9FF178AC2E100A83391 /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5A9FE178AC2E100A83391 /* CardsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,6 @@
 		8C5C952C178A3E1D00A0F42A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8C5C952E178A3E1D00A0F42A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8C5C9530178A3E1D00A0F42A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		8C5C9533178A3E1D00A0F42A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8C5C9535178A3E1D00A0F42A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8C5C9536178A3E1D00A0F42A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C5C953D178A3E1D00A0F42A /* CardsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +99,8 @@
 		8C5C9581178A8FB700A0F42A /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
 		8C5C9582178A8FB700A0F42A /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 		8C5C9583178A8FB700A0F42A /* BViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
+		8CC5A9FD178AC2E100A83391 /* CardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsViewController.h; sourceTree = "<group>"; };
+		8CC5A9FE178AC2E100A83391 /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +163,6 @@
 				8C5C955B178A454300A0F42A /* JTCategories */,
 				8C5C9529178A3E1D00A0F42A /* AppDelegate.h */,
 				8C5C952A178A3E1D00A0F42A /* AppDelegate.m */,
-				8C5C9532178A3E1D00A0F42A /* MainStoryboard.storyboard */,
 				8C5C9535178A3E1D00A0F42A /* ViewController.h */,
 				8C5C9536178A3E1D00A0F42A /* ViewController.m */,
 				8C5C9555178A417D00A0F42A /* AViewController.h */,
@@ -173,6 +173,8 @@
 				8C5C9581178A8FB700A0F42A /* BViewController.h */,
 				8C5C9582178A8FB700A0F42A /* BViewController.m */,
 				8C5C9583178A8FB700A0F42A /* BViewController.xib */,
+				8CC5A9FD178AC2E100A83391 /* CardsViewController.h */,
+				8CC5A9FE178AC2E100A83391 /* CardsViewController.m */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -312,7 +314,6 @@
 				8C5C952D178A3E1D00A0F42A /* Default.png in Resources */,
 				8C5C952F178A3E1D00A0F42A /* Default@2x.png in Resources */,
 				8C5C9531178A3E1D00A0F42A /* Default-568h@2x.png in Resources */,
-				8C5C9534178A3E1D00A0F42A /* MainStoryboard.storyboard in Resources */,
 				8C5C9570178A454300A0F42A /* LICENSE in Resources */,
 				8C5C9576178A454300A0F42A /* README.md in Resources */,
 				8C5C9585178A8FB700A0F42A /* BViewController.xib in Resources */,
@@ -365,6 +366,7 @@
 				8C5C957A178A454300A0F42A /* UIViewController+ActivityIndicator.m in Sources */,
 				8C5C9580178A837300A0F42A /* CardLayout.m in Sources */,
 				8C5C9584178A8FB700A0F42A /* BViewController.m in Sources */,
+				8CC5A9FF178AC2E100A83391 /* CardsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,14 +395,6 @@
 				8C5C9524178A3E1D00A0F42A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8C5C9532178A3E1D00A0F42A /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C5C9533178A3E1D00A0F42A /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		8C5C9547178A3E1D00A0F42A /* InfoPlist.strings */ = {

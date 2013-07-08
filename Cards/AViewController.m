@@ -36,6 +36,8 @@
     label.textAlignment = NSTextAlignmentCenter;
     label.backgroundColor = [UIColor clearColor];
     [view addSubview:label];
+    [label sizeToFit];
+    [label centerXOnSuperview];
   }
   self.view = view;
 }

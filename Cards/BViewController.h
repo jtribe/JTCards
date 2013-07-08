@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface BViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *cardView;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+- (IBAction)switchedChanged:(id)sender;
+- (IBAction)segmentChanged:(id)sender;
 
 @end
