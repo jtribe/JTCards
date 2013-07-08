@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "SampleViewController.h"
 #import "BViewController.h"
-#import "CardsViewController.h"
+#import "JTCardsViewController.h"
 
 @implementation AppDelegate
 
@@ -41,7 +41,7 @@
       [cards addObject:controller];
     }
   }
-  CardsViewController *controller = [[CardsViewController alloc] initWithCardControllers:cards];
+  JTCardsViewController *controller = [[JTCardsViewController alloc] initWithCardControllers:cards];
   
   
 //  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
