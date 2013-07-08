@@ -37,7 +37,7 @@
     label.backgroundColor = [UIColor clearColor];
     [view addSubview:label];
     [label sizeToFit];
-    [label centerXOnSuperview];
+    label.center = CGPointMake(label.superview.center.x, label.center.y);
   }
   self.view = view;
 }

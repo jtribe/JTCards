@@ -26,8 +26,6 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  // make corners round
-  
 }
 
 

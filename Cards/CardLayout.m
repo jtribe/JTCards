@@ -43,7 +43,7 @@
   self.showingAll = YES;
   
   NSInteger index = 0;
-  CGFloat availableHeigth = self.containerView.h - self.topMargin;
+  CGFloat availableHeigth = self.containerView.bounds.size.height - self.topMargin;
   CGFloat offset = (self.expandedSpacing? self.expandedSpacing : availableHeigth / [self.views count]);
   for (UIView *view in self.views) {
     [self addTapGestureRecogniserToView:view];
@@ -73,7 +73,7 @@
   
   // move the controller view to top position
   [UIView animateWithDuration:0.3 delay:0.0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
-    [selectedView centerOnSuperview];
+    selectedView.center = CGPointMake(selectedView.superview.center.x, selectedView.superview.center.y);
   } completion:^(BOOL finished) {
     // done
   }];
@@ -83,11 +83,13 @@
   for (UIView *view in self.views) {
     if (selectedView != view) {
       [UIView animateWithDuration:0.3 delay:0.0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
-        [view moveDownBy:(view.superview.h - view.y)];
+        CGFloat moveDownBy = (view.superview.frame.size.height - view.frame.origin.y);
+        view.center = CGPointMake(view.center.x, view.center.y + moveDownBy);
       } completion:^(BOOL finished) {
-        // move up to peek out
+        // move up to peek out from bottom
         [UIView animateWithDuration:0.1 animations:^{
-          [view moveUpBy:(self.peekFromBottom - index * self.collapsedSpacing)];
+          CGFloat moveUpBy = (self.peekFromBottom - index * self.collapsedSpacing);
+          view.center = CGPointMake(view.center.x, view.center.y - moveUpBy);
         }];
       }];
       [self addPanGestureRecogniserToView:view];
@@ -97,6 +99,7 @@
 }
 
 #pragma mark - tap gesture
+
 - (void) addTapGestureRecogniserToView:(UIView*)view
 {
   // only add tap gesture if there is not already one
@@ -175,7 +178,9 @@
   }
   
   CGPoint location = [recogniser translationInView:recogniser.view];
-  [recogniser.view moveDownBy:(location.y - self.startPanLocation.y)];
+  CGFloat moveDownBy = (location.y - self.startPanLocation.y);
+  recogniser.view.center = CGPointMake(recogniser.view.center.x, recogniser.view.center.y + moveDownBy);
+
   self.startPanLocation = location;
 }
                                        

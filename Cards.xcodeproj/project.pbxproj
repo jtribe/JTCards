@@ -23,17 +23,6 @@
 		8C5C9549178A3E1D00A0F42A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9547178A3E1D00A0F42A /* InfoPlist.strings */; };
 		8C5C954C178A3E1D00A0F42A /* CardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C954B178A3E1D00A0F42A /* CardsTests.m */; };
 		8C5C9557178A417D00A0F42A /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9556178A417D00A0F42A /* AViewController.m */; };
-		8C5C9570178A454300A0F42A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C955C178A454300A0F42A /* LICENSE */; };
-		8C5C9571178A454300A0F42A /* NSArray+Next.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C955E178A454300A0F42A /* NSArray+Next.m */; };
-		8C5C9572178A454300A0F42A /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9560178A454300A0F42A /* NSData+Additions.m */; };
-		8C5C9573178A454300A0F42A /* NSDate+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9562178A454300A0F42A /* NSDate+Expanded.m */; };
-		8C5C9574178A454300A0F42A /* NSDictionary+Access.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9564178A454300A0F42A /* NSDictionary+Access.m */; };
-		8C5C9575178A454300A0F42A /* NSObject+SimpleNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9566178A454300A0F42A /* NSObject+SimpleNotification.m */; };
-		8C5C9576178A454300A0F42A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9567178A454300A0F42A /* README.md */; };
-		8C5C9577178A454300A0F42A /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9569178A454300A0F42A /* UIColor+Additions.m */; };
-		8C5C9578178A454300A0F42A /* UIColor+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C956B178A454300A0F42A /* UIColor+Serialize.m */; };
-		8C5C9579178A454300A0F42A /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C956D178A454300A0F42A /* UIView+Position.m */; };
-		8C5C957A178A454300A0F42A /* UIViewController+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C956F178A454300A0F42A /* UIViewController+ActivityIndicator.m */; };
 		8C5C9580178A837300A0F42A /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C957F178A837300A0F42A /* CardLayout.m */; };
 		8C5C9584178A8FB700A0F42A /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9582178A8FB700A0F42A /* BViewController.m */; };
 		8C5C9585178A8FB700A0F42A /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9583178A8FB700A0F42A /* BViewController.xib */; };
@@ -74,26 +63,6 @@
 		8C5C954B178A3E1D00A0F42A /* CardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsTests.m; sourceTree = "<group>"; };
 		8C5C9555178A417D00A0F42A /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		8C5C9556178A417D00A0F42A /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
-		8C5C955C178A454300A0F42A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8C5C955D178A454300A0F42A /* NSArray+Next.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Next.h"; sourceTree = "<group>"; };
-		8C5C955E178A454300A0F42A /* NSArray+Next.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Next.m"; sourceTree = "<group>"; };
-		8C5C955F178A454300A0F42A /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
-		8C5C9560178A454300A0F42A /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
-		8C5C9561178A454300A0F42A /* NSDate+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Expanded.h"; sourceTree = "<group>"; };
-		8C5C9562178A454300A0F42A /* NSDate+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Expanded.m"; sourceTree = "<group>"; };
-		8C5C9563178A454300A0F42A /* NSDictionary+Access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Access.h"; sourceTree = "<group>"; };
-		8C5C9564178A454300A0F42A /* NSDictionary+Access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Access.m"; sourceTree = "<group>"; };
-		8C5C9565178A454300A0F42A /* NSObject+SimpleNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SimpleNotification.h"; sourceTree = "<group>"; };
-		8C5C9566178A454300A0F42A /* NSObject+SimpleNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SimpleNotification.m"; sourceTree = "<group>"; };
-		8C5C9567178A454300A0F42A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		8C5C9568178A454300A0F42A /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
-		8C5C9569178A454300A0F42A /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
-		8C5C956A178A454300A0F42A /* UIColor+Serialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Serialize.h"; sourceTree = "<group>"; };
-		8C5C956B178A454300A0F42A /* UIColor+Serialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Serialize.m"; sourceTree = "<group>"; };
-		8C5C956C178A454300A0F42A /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
-		8C5C956D178A454300A0F42A /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
-		8C5C956E178A454300A0F42A /* UIViewController+ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ActivityIndicator.h"; sourceTree = "<group>"; };
-		8C5C956F178A454300A0F42A /* UIViewController+ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ActivityIndicator.m"; sourceTree = "<group>"; };
 		8C5C957E178A837300A0F42A /* CardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
 		8C5C957F178A837300A0F42A /* CardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardLayout.m; sourceTree = "<group>"; };
 		8C5C9581178A8FB700A0F42A /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
@@ -160,7 +129,6 @@
 		8C5C9520178A3E1D00A0F42A /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				8C5C955B178A454300A0F42A /* JTCategories */,
 				8C5C9529178A3E1D00A0F42A /* AppDelegate.h */,
 				8C5C952A178A3E1D00A0F42A /* AppDelegate.m */,
 				8C5C9535178A3E1D00A0F42A /* ViewController.h */,
@@ -210,33 +178,6 @@
 				8C5C9547178A3E1D00A0F42A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8C5C955B178A454300A0F42A /* JTCategories */ = {
-			isa = PBXGroup;
-			children = (
-				8C5C955C178A454300A0F42A /* LICENSE */,
-				8C5C955D178A454300A0F42A /* NSArray+Next.h */,
-				8C5C955E178A454300A0F42A /* NSArray+Next.m */,
-				8C5C955F178A454300A0F42A /* NSData+Additions.h */,
-				8C5C9560178A454300A0F42A /* NSData+Additions.m */,
-				8C5C9561178A454300A0F42A /* NSDate+Expanded.h */,
-				8C5C9562178A454300A0F42A /* NSDate+Expanded.m */,
-				8C5C9563178A454300A0F42A /* NSDictionary+Access.h */,
-				8C5C9564178A454300A0F42A /* NSDictionary+Access.m */,
-				8C5C9565178A454300A0F42A /* NSObject+SimpleNotification.h */,
-				8C5C9566178A454300A0F42A /* NSObject+SimpleNotification.m */,
-				8C5C9567178A454300A0F42A /* README.md */,
-				8C5C9568178A454300A0F42A /* UIColor+Additions.h */,
-				8C5C9569178A454300A0F42A /* UIColor+Additions.m */,
-				8C5C956A178A454300A0F42A /* UIColor+Serialize.h */,
-				8C5C956B178A454300A0F42A /* UIColor+Serialize.m */,
-				8C5C956C178A454300A0F42A /* UIView+Position.h */,
-				8C5C956D178A454300A0F42A /* UIView+Position.m */,
-				8C5C956E178A454300A0F42A /* UIViewController+ActivityIndicator.h */,
-				8C5C956F178A454300A0F42A /* UIViewController+ActivityIndicator.m */,
-			);
-			path = JTCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,8 +255,6 @@
 				8C5C952D178A3E1D00A0F42A /* Default.png in Resources */,
 				8C5C952F178A3E1D00A0F42A /* Default@2x.png in Resources */,
 				8C5C9531178A3E1D00A0F42A /* Default-568h@2x.png in Resources */,
-				8C5C9570178A454300A0F42A /* LICENSE in Resources */,
-				8C5C9576178A454300A0F42A /* README.md in Resources */,
 				8C5C9585178A8FB700A0F42A /* BViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,15 +294,6 @@
 				8C5C952B178A3E1D00A0F42A /* AppDelegate.m in Sources */,
 				8C5C9537178A3E1D00A0F42A /* ViewController.m in Sources */,
 				8C5C9557178A417D00A0F42A /* AViewController.m in Sources */,
-				8C5C9571178A454300A0F42A /* NSArray+Next.m in Sources */,
-				8C5C9572178A454300A0F42A /* NSData+Additions.m in Sources */,
-				8C5C9573178A454300A0F42A /* NSDate+Expanded.m in Sources */,
-				8C5C9574178A454300A0F42A /* NSDictionary+Access.m in Sources */,
-				8C5C9575178A454300A0F42A /* NSObject+SimpleNotification.m in Sources */,
-				8C5C9577178A454300A0F42A /* UIColor+Additions.m in Sources */,
-				8C5C9578178A454300A0F42A /* UIColor+Serialize.m in Sources */,
-				8C5C9579178A454300A0F42A /* UIView+Position.m in Sources */,
-				8C5C957A178A454300A0F42A /* UIViewController+ActivityIndicator.m in Sources */,
 				8C5C9580178A837300A0F42A /* CardLayout.m in Sources */,
 				8C5C9584178A8FB700A0F42A /* BViewController.m in Sources */,
 				8CC5A9FF178AC2E100A83391 /* CardsViewController.m in Sources */,
