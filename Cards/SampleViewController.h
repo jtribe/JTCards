@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AViewController : UIViewController
+@interface SampleViewController : UIViewController
 
 - (id) initWithTitle:(NSString*)title;
 

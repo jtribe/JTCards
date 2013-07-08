@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AViewController.h"
+#import "SampleViewController.h"
 #import "BViewController.h"
 #import "CardsViewController.h"
 
@@ -19,19 +19,19 @@
   NSMutableArray *cards = [NSMutableArray array];
   { 
     {
-      AViewController *controller = [[AViewController alloc] initWithTitle:@"A"];
+      SampleViewController *controller = [[SampleViewController alloc] initWithTitle:@"A"];
       controller.view.backgroundColor = [UIColor greenColor];
       [cards addObject:controller];
     }
     
     {
-      AViewController *controller = [[AViewController alloc] initWithTitle:@"B"];
+      SampleViewController *controller = [[SampleViewController alloc] initWithTitle:@"B"];
       controller.view.backgroundColor = [UIColor blueColor];
       [cards addObject:controller];
     }
     
     {
-      AViewController *controller = [[AViewController alloc] initWithTitle:@"C"];
+      SampleViewController *controller = [[SampleViewController alloc] initWithTitle:@"C"];
       controller.view.backgroundColor = [UIColor orangeColor];
       [cards addObject:controller];
     }

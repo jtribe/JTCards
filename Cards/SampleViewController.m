@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 jTribe. All rights reserved.
 //
 
-#import "AViewController.h"
+#import "SampleViewController.h"
 
-@interface AViewController ()
+@interface SampleViewController ()
 
 @end
 
-@implementation AViewController
+@implementation SampleViewController
 
 - (id) initWithTitle:(NSString*)title
 {
