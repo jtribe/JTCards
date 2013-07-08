@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CardLayoutDelegate <NSObject>
+@protocol JTCardLayoutDelegate <NSObject>
 
 @end
 
@@ -17,7 +17,7 @@
  1. showing all views
  2. showing single view
  */
-@interface CardLayout : NSObject
+@interface JTCardLayout : NSObject
 
 // showing all views or focusing on one?
 @property BOOL showingAll;
@@ -26,7 +26,7 @@
 // the reference view that contains all other views
 @property (nonatomic,strong) UIView *containerView;
 // the controller that uses the layout
-@property (nonatomic,weak) id<CardLayoutDelegate> delegate;
+@property (nonatomic,weak) id<JTCardLayoutDelegate> delegate;
 
 
 // top margin of focused card

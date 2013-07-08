@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 jTribe. All rights reserved.
 //
 
-#import "CardsViewController.h"
-#import "CardLayout.h"
+#import "JTCardsViewController.h"
+#import "JTCardLayout.h"
 
-@interface CardsViewController ()
+@interface JTCardsViewController ()
 @property BOOL showingAll;
 @property (nonatomic,strong) NSMutableArray *cardControllers;
-@property (nonatomic,strong) CardLayout *layout;
+@property (nonatomic,strong) JTCardLayout *layout;
 @end
 
-@implementation CardsViewController
+@implementation JTCardsViewController
 
 - (id) initWithCardControllers:(NSArray*)cardControllers
 {
@@ -40,7 +40,7 @@
   for (UIViewController *controller in self.childViewControllers) {
     [views addObject:controller.view];
   }
-  self.layout = [[CardLayout alloc] initWithViews:views containerView:self.view];
+  self.layout = [[JTCardLayout alloc] initWithViews:views containerView:self.view];
   [self.layout layoutAllAnimated:NO];
   
 }

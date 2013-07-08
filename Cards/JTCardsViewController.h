@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CardsViewController : UIViewController
+@interface JTCardsViewController : UIViewController
 
 - (id) initWithCardControllers:(NSArray*)cardControllers;
 
