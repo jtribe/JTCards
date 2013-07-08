@@ -10,22 +10,22 @@
 		8C5C951B178A3E1D00A0F42A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C951A178A3E1D00A0F42A /* UIKit.framework */; };
 		8C5C951D178A3E1D00A0F42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C951C178A3E1D00A0F42A /* Foundation.framework */; };
 		8C5C951F178A3E1D00A0F42A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C951E178A3E1D00A0F42A /* CoreGraphics.framework */; };
-		8C5C9525178A3E1D00A0F42A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9523178A3E1D00A0F42A /* InfoPlist.strings */; };
-		8C5C9527178A3E1D00A0F42A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9526178A3E1D00A0F42A /* main.m */; };
-		8C5C952B178A3E1D00A0F42A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C952A178A3E1D00A0F42A /* AppDelegate.m */; };
-		8C5C952D178A3E1D00A0F42A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C952C178A3E1D00A0F42A /* Default.png */; };
-		8C5C952F178A3E1D00A0F42A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C952E178A3E1D00A0F42A /* Default@2x.png */; };
-		8C5C9531178A3E1D00A0F42A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9530178A3E1D00A0F42A /* Default-568h@2x.png */; };
 		8C5C953F178A3E1D00A0F42A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C953E178A3E1D00A0F42A /* SenTestingKit.framework */; };
 		8C5C9540178A3E1D00A0F42A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C951A178A3E1D00A0F42A /* UIKit.framework */; };
 		8C5C9541178A3E1D00A0F42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C951C178A3E1D00A0F42A /* Foundation.framework */; };
 		8C5C9549178A3E1D00A0F42A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9547178A3E1D00A0F42A /* InfoPlist.strings */; };
 		8C5C954C178A3E1D00A0F42A /* CardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C954B178A3E1D00A0F42A /* CardsTests.m */; };
-		8C5C9557178A417D00A0F42A /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9556178A417D00A0F42A /* SampleViewController.m */; };
-		8C5C9580178A837300A0F42A /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C957F178A837300A0F42A /* CardLayout.m */; };
-		8C5C9584178A8FB700A0F42A /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C9582178A8FB700A0F42A /* BViewController.m */; };
-		8C5C9585178A8FB700A0F42A /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9583178A8FB700A0F42A /* BViewController.xib */; };
-		8CC5A9FF178AC2E100A83391 /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5A9FE178AC2E100A83391 /* CardsViewController.m */; };
+		8CC5AA10178AE17E00A83391 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA02178AE17E00A83391 /* AppDelegate.m */; };
+		8CC5AA11178AE17E00A83391 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA04178AE17E00A83391 /* BViewController.m */; };
+		8CC5AA12178AE17E00A83391 /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA05178AE17E00A83391 /* BViewController.xib */; };
+		8CC5AA14178AE17E00A83391 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA08178AE17E00A83391 /* Default-568h@2x.png */; };
+		8CC5AA15178AE17E00A83391 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA09178AE17E00A83391 /* Default.png */; };
+		8CC5AA16178AE17E00A83391 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA0A178AE17E00A83391 /* Default@2x.png */; };
+		8CC5AA17178AE17E00A83391 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA0B178AE17E00A83391 /* InfoPlist.strings */; };
+		8CC5AA18178AE17E00A83391 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA0D178AE17E00A83391 /* main.m */; };
+		8CC5AA19178AE17E00A83391 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA0F178AE17E00A83391 /* SampleViewController.m */; };
+		8CC5AA1F178AE18C00A83391 /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA1C178AE18C00A83391 /* CardLayout.m */; };
+		8CC5AA20178AE18C00A83391 /* CardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA1E178AE18C00A83391 /* CardsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,30 +43,30 @@
 		8C5C951A178A3E1D00A0F42A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8C5C951C178A3E1D00A0F42A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8C5C951E178A3E1D00A0F42A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8C5C9522178A3E1D00A0F42A /* Cards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cards-Info.plist"; sourceTree = "<group>"; };
-		8C5C9524178A3E1D00A0F42A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8C5C9526178A3E1D00A0F42A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8C5C9528178A3E1D00A0F42A /* Cards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cards-Prefix.pch"; sourceTree = "<group>"; };
-		8C5C9529178A3E1D00A0F42A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8C5C952A178A3E1D00A0F42A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8C5C952C178A3E1D00A0F42A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		8C5C952E178A3E1D00A0F42A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		8C5C9530178A3E1D00A0F42A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8C5C953D178A3E1D00A0F42A /* CardsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5C953E178A3E1D00A0F42A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8C5C9546178A3E1D00A0F42A /* CardsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardsTests-Info.plist"; sourceTree = "<group>"; };
 		8C5C9548178A3E1D00A0F42A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C5C954A178A3E1D00A0F42A /* CardsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardsTests.h; sourceTree = "<group>"; };
 		8C5C954B178A3E1D00A0F42A /* CardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsTests.m; sourceTree = "<group>"; };
-		8C5C9555178A417D00A0F42A /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
-		8C5C9556178A417D00A0F42A /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
-		8C5C957E178A837300A0F42A /* CardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
-		8C5C957F178A837300A0F42A /* CardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardLayout.m; sourceTree = "<group>"; };
-		8C5C9581178A8FB700A0F42A /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
-		8C5C9582178A8FB700A0F42A /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
-		8C5C9583178A8FB700A0F42A /* BViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
-		8CC5A9FD178AC2E100A83391 /* CardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsViewController.h; sourceTree = "<group>"; };
-		8CC5A9FE178AC2E100A83391 /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsViewController.m; sourceTree = "<group>"; };
+		8CC5AA01178AE17E00A83391 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CC5AA02178AE17E00A83391 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CC5AA03178AE17E00A83391 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		8CC5AA04178AE17E00A83391 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		8CC5AA05178AE17E00A83391 /* BViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
+		8CC5AA06178AE17E00A83391 /* Cards-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Cards-Info.plist"; sourceTree = "<group>"; };
+		8CC5AA07178AE17E00A83391 /* Cards-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cards-Prefix.pch"; sourceTree = "<group>"; };
+		8CC5AA08178AE17E00A83391 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8CC5AA09178AE17E00A83391 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8CC5AA0A178AE17E00A83391 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8CC5AA0C178AE17E00A83391 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CC5AA0D178AE17E00A83391 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CC5AA0E178AE17E00A83391 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		8CC5AA0F178AE17E00A83391 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		8CC5AA1B178AE18C00A83391 /* CardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
+		8CC5AA1C178AE18C00A83391 /* CardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardLayout.m; sourceTree = "<group>"; };
+		8CC5AA1D178AE18C00A83391 /* CardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsViewController.h; sourceTree = "<group>"; };
+		8CC5AA1E178AE18C00A83391 /* CardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,8 @@
 		8C5C950E178A3E1D00A0F42A = {
 			isa = PBXGroup;
 			children = (
-				8C5C9520178A3E1D00A0F42A /* Cards */,
+				8CC5AA1A178AE18C00A83391 /* Cards */,
+				8CC5AA00178AE17E00A83391 /* Example */,
 				8C5C9544178A3E1D00A0F42A /* CardsTests */,
 				8C5C9519178A3E1D00A0F42A /* Frameworks */,
 				8C5C9518178A3E1D00A0F42A /* Products */,
@@ -123,39 +124,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8C5C9520178A3E1D00A0F42A /* Cards */ = {
-			isa = PBXGroup;
-			children = (
-				8C5C9529178A3E1D00A0F42A /* AppDelegate.h */,
-				8C5C952A178A3E1D00A0F42A /* AppDelegate.m */,
-				8C5C9555178A417D00A0F42A /* SampleViewController.h */,
-				8C5C9556178A417D00A0F42A /* SampleViewController.m */,
-				8C5C957E178A837300A0F42A /* CardLayout.h */,
-				8C5C957F178A837300A0F42A /* CardLayout.m */,
-				8C5C9581178A8FB700A0F42A /* BViewController.h */,
-				8C5C9582178A8FB700A0F42A /* BViewController.m */,
-				8C5C9583178A8FB700A0F42A /* BViewController.xib */,
-				8CC5A9FD178AC2E100A83391 /* CardsViewController.h */,
-				8CC5A9FE178AC2E100A83391 /* CardsViewController.m */,
-				8C5C9521178A3E1D00A0F42A /* Supporting Files */,
-			);
-			path = Cards;
-			sourceTree = "<group>";
-		};
-		8C5C9521178A3E1D00A0F42A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8C5C9522178A3E1D00A0F42A /* Cards-Info.plist */,
-				8C5C9523178A3E1D00A0F42A /* InfoPlist.strings */,
-				8C5C9526178A3E1D00A0F42A /* main.m */,
-				8C5C9528178A3E1D00A0F42A /* Cards-Prefix.pch */,
-				8C5C952C178A3E1D00A0F42A /* Default.png */,
-				8C5C952E178A3E1D00A0F42A /* Default@2x.png */,
-				8C5C9530178A3E1D00A0F42A /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		8C5C9544178A3E1D00A0F42A /* CardsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +141,38 @@
 				8C5C9547178A3E1D00A0F42A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CC5AA00178AE17E00A83391 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				8CC5AA01178AE17E00A83391 /* AppDelegate.h */,
+				8CC5AA02178AE17E00A83391 /* AppDelegate.m */,
+				8CC5AA03178AE17E00A83391 /* BViewController.h */,
+				8CC5AA04178AE17E00A83391 /* BViewController.m */,
+				8CC5AA05178AE17E00A83391 /* BViewController.xib */,
+				8CC5AA06178AE17E00A83391 /* Cards-Info.plist */,
+				8CC5AA07178AE17E00A83391 /* Cards-Prefix.pch */,
+				8CC5AA08178AE17E00A83391 /* Default-568h@2x.png */,
+				8CC5AA09178AE17E00A83391 /* Default.png */,
+				8CC5AA0A178AE17E00A83391 /* Default@2x.png */,
+				8CC5AA0B178AE17E00A83391 /* InfoPlist.strings */,
+				8CC5AA0D178AE17E00A83391 /* main.m */,
+				8CC5AA0E178AE17E00A83391 /* SampleViewController.h */,
+				8CC5AA0F178AE17E00A83391 /* SampleViewController.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		8CC5AA1A178AE18C00A83391 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				8CC5AA1B178AE18C00A83391 /* CardLayout.h */,
+				8CC5AA1C178AE18C00A83391 /* CardLayout.m */,
+				8CC5AA1D178AE18C00A83391 /* CardsViewController.h */,
+				8CC5AA1E178AE18C00A83391 /* CardsViewController.m */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5C9525178A3E1D00A0F42A /* InfoPlist.strings in Resources */,
-				8C5C952D178A3E1D00A0F42A /* Default.png in Resources */,
-				8C5C952F178A3E1D00A0F42A /* Default@2x.png in Resources */,
-				8C5C9531178A3E1D00A0F42A /* Default-568h@2x.png in Resources */,
-				8C5C9585178A8FB700A0F42A /* BViewController.xib in Resources */,
+				8CC5AA12178AE17E00A83391 /* BViewController.xib in Resources */,
+				8CC5AA14178AE17E00A83391 /* Default-568h@2x.png in Resources */,
+				8CC5AA15178AE17E00A83391 /* Default.png in Resources */,
+				8CC5AA16178AE17E00A83391 /* Default@2x.png in Resources */,
+				8CC5AA17178AE17E00A83391 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5C9527178A3E1D00A0F42A /* main.m in Sources */,
-				8C5C952B178A3E1D00A0F42A /* AppDelegate.m in Sources */,
-				8C5C9557178A417D00A0F42A /* SampleViewController.m in Sources */,
-				8C5C9580178A837300A0F42A /* CardLayout.m in Sources */,
-				8C5C9584178A8FB700A0F42A /* BViewController.m in Sources */,
-				8CC5A9FF178AC2E100A83391 /* CardsViewController.m in Sources */,
+				8CC5AA10178AE17E00A83391 /* AppDelegate.m in Sources */,
+				8CC5AA11178AE17E00A83391 /* BViewController.m in Sources */,
+				8CC5AA18178AE17E00A83391 /* main.m in Sources */,
+				8CC5AA19178AE17E00A83391 /* SampleViewController.m in Sources */,
+				8CC5AA1F178AE18C00A83391 /* CardLayout.m in Sources */,
+				8CC5AA20178AE18C00A83391 /* CardsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,18 +313,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8C5C9523178A3E1D00A0F42A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C5C9524178A3E1D00A0F42A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		8C5C9547178A3E1D00A0F42A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8C5C9548178A3E1D00A0F42A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CC5AA0B178AE17E00A83391 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC5AA0C178AE17E00A83391 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -392,8 +392,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cards/Cards-Prefix.pch";
-				INFOPLIST_FILE = "Cards/Cards-Info.plist";
+				GCC_PREFIX_HEADER = "Example/Cards-Prefix.pch";
+				INFOPLIST_FILE = "Example/Cards-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -403,8 +403,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Cards/Cards-Prefix.pch";
-				INFOPLIST_FILE = "Cards/Cards-Info.plist";
+				GCC_PREFIX_HEADER = "Example/Cards-Prefix.pch";
+				INFOPLIST_FILE = "Example/Cards-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
