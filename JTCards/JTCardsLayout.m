@@ -23,7 +23,7 @@
   if (self) {
     self.views = views;
     self.containerView = containerView;
-    self.topMargin = 50.0;
+    self.topMargin = 3.0;
     self.containerSize = self.containerView.bounds.size;
     self.collapsedSpacing = 10.0;
     self.peekFromBottom = 30.0;
