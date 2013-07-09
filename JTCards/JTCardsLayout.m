@@ -66,7 +66,6 @@
     CGFloat x = view.superview.bounds.size.width/2 - w/2;
     CGRect rect = CGRectMake(x,y,w,h);
     if (!animated) {
-      if (index == 3) view.backgroundColor = [UIColor redColor];
       view.frame = rect;
     }
     else {
