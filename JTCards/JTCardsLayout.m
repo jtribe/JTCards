@@ -86,7 +86,7 @@
   
   // move the controller view to top position
   [UIView animateWithDuration:0.3 delay:0.0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
-    selectedView.center = CGPointMake(selectedView.superview.bounds.size.width/2, selectedView.superview.bounds.size.height/2);
+    selectedView.center = CGPointMake(selectedView.superview.bounds.size.width/2, selectedView.bounds.size.height/2 + self.topMargin);
   } completion:^(BOOL finished) {
     // done
   }];
