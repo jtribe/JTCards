@@ -23,7 +23,7 @@
   if (self) {
     self.views = views;
     self.containerView = containerView;
-    self.topMargin = 3.0;
+    self.topMargin = 0.0;
     self.containerSize = self.containerView.bounds.size;
     self.collapsedSpacing = 10.0;
     self.peekFromBottom = 30.0;
@@ -87,7 +87,7 @@
   
   // move the controller view to top position
   [UIView animateWithDuration:0.3 delay:0.0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
-    selectedView.center = CGPointMake(selectedView.superview.center.x, selectedView.superview.center.y);
+    selectedView.center = CGPointMake(selectedView.superview.bounds.size.width/2, selectedView.superview.bounds.size.height/2);
   } completion:^(BOOL finished) {
     // done
   }];
