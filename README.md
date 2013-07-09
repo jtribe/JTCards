@@ -18,8 +18,11 @@ Here is a simple sample of how you add two controllers to the card controller.'
     - (BOOL)application:(UIApplication *)application 
             didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     {
+      // create an array of controllers
       NSArray *cards = @[[[FirstViewController alloc] init], [[SecondViewController alloc] init]];
-      JTCardsViewController *controller = [[JTCardsViewController alloc] initWithCardControllers:cards];
+      // craete card contoller with array of controllers
+      JTCardsViewController *controller = [[JTCardsViewController alloc] initWithCards:cards];
+      
       self.window.rootViewController = controller;
       return YES;
     }
