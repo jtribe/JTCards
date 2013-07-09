@@ -12,6 +12,7 @@
 
 @property CGPoint startPanLocation;
 
+
 @end
 
 @implementation JTCardsLayout
@@ -23,9 +24,7 @@
     self.views = views;
     self.containerView = containerView;
     self.topMargin = 50.0;
-    CGFloat bottomPartHeight = [self.views count] * self.collapsedSpacing;
-    self.sizeToFit = CGSizeMake(containerView.bounds.size.width,
-                                containerView.bounds.size.height - self.topMargin - bottomPartHeight);
+    self.containerSize = self.containerView.bounds.size;
     self.collapsedSpacing = 10.0;
     self.peekFromBottom = 30.0;
     self.expandedSpacing = 0.0;
@@ -33,6 +32,19 @@
   return self;
 }
 
+- (id) init
+{
+  return [self initWithViews:nil containerView:nil];
+}
+
+#pragma mark - accessors
+
+- (CGSize) sizeToFit
+{
+  CGFloat bottomPartHeight = [self.views count] * self.collapsedSpacing;
+  return CGSizeMake(self.containerSize.width,
+                    self.containerSize.height - self.topMargin - bottomPartHeight);
+}
 
 #pragma mark - Logic
 
@@ -47,12 +59,14 @@
   CGFloat offset = (self.expandedSpacing? self.expandedSpacing : availableHeigth / [self.views count]);
   for (UIView *view in self.views) {
     [self addTapGestureRecogniserToView:view];
+    // force into container size if needed
     CGFloat w = view.frame.size.width > self.sizeToFit.width ? self.sizeToFit.width : view.frame.size.width;
     CGFloat h = view.frame.size.height > self.sizeToFit.height ? self.sizeToFit.height : view.frame.size.height;
     CGFloat y = (offset * index) + self.topMargin;
     CGFloat x = view.superview.bounds.size.width/2 - w/2;
     CGRect rect = CGRectMake(x,y,w,h);
     if (!animated) {
+      if (index == 3) view.backgroundColor = [UIColor redColor];
       view.frame = rect;
     }
     else {

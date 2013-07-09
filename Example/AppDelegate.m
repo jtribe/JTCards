@@ -7,45 +7,16 @@
 //
 
 #import "AppDelegate.h"
-#import "SampleViewController.h"
-#import "BViewController.h"
-#import "JTCardsViewController.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // Override point for customization after application launch.
-  NSMutableArray *cards = [NSMutableArray array];
-  { 
-    {
-      SampleViewController *controller = [[SampleViewController alloc] initWithTitle:@"A"];
-      controller.view.backgroundColor = [UIColor greenColor];
-      [cards addObject:controller];
-    }
-    
-    {
-      SampleViewController *controller = [[SampleViewController alloc] initWithTitle:@"B"];
-      controller.view.backgroundColor = [UIColor blueColor];
-      [cards addObject:controller];
-    }
-    
-    {
-      SampleViewController *controller = [[SampleViewController alloc] initWithTitle:@"C"];
-      controller.view.backgroundColor = [UIColor orangeColor];
-      [cards addObject:controller];
-    }
-    
-    {
-      BViewController *controller = [[BViewController alloc] init];
-      [cards addObject:controller];
-    }
-  }
-  JTCardsViewController *controller = [[JTCardsViewController alloc] initWithCardControllers:cards];
   
-  
-//  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-  self.window.rootViewController = controller;
+  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[RootViewController alloc] init]];
+  self.window.rootViewController = nav;
   return YES;
 }
 

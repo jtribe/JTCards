@@ -10,4 +10,7 @@
 
 @interface RootViewController : UIViewController
 
+- (IBAction)defaultLayoutPressed:(id)sender;
+- (IBAction)customisedLayoutPressed:(id)sender;
+
 @end

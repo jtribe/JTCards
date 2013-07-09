@@ -31,8 +31,8 @@
 
 // top margin of focused card
 @property CGFloat topMargin;
-// size used to fit the cards in
-@property CGSize sizeToFit;
+// size to fit the cards in
+@property CGSize containerSize;
 // spacing between cards when expanded in showAll mode
 @property CGFloat expandedSpacing;
 // spacing between cards when collapsed at bottom
