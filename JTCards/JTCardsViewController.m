@@ -11,7 +11,6 @@
 
 @interface JTCardsViewController ()
 @property BOOL showingAll;
-@property (nonatomic,strong) NSMutableArray *cardControllers;
 @property (nonatomic,strong) JTCardsLayout *layout;
 @end
 
