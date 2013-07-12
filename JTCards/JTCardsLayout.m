@@ -11,6 +11,7 @@
 @interface JTCardsLayout ()
 
 @property CGPoint startPanLocation;
+@property CGPoint lastPanLocation;
 
 
 @end
@@ -25,8 +26,8 @@
     self.containerView = containerView;
     self.topMargin = 0.0;
     self.containerSize = self.containerView.bounds.size;
-    self.collapsedSpacing = 10.0;
-    self.peekFromBottom = 30.0;
+    self.collapsedSpacing = 5.0;
+    self.peekFromBottom = 50.0;
     self.expandedSpacing = 0.0;
   }
   return self;
@@ -180,22 +181,36 @@
 #pragma mark pan
 - (void) panRecognised:(UIPanGestureRecognizer*)recogniser
 {
+  CGPoint location = [recogniser translationInView:recogniser.view];
+  NSLog(@"%f, %f", location.x, location.y);
+  
+  CGFloat movedTotalDownBy = (location.y - self.startPanLocation.y);
+  NSLog(@"total moved %f", movedTotalDownBy);
+  CGFloat movedDownBy = (location.y - self.lastPanLocation.y);
+  NSLog(@"moved %f", movedDownBy);
+  
   if (recogniser.state == UIGestureRecognizerStateEnded) {
-    // bounce back
-    [self bringToFront:recogniser.view];
+    if ( movedTotalDownBy > 100) {
+      // collapse and show all when moved to far down.
+      [self layoutAllAnimated:YES];
+    }
+    else {
+      // bounce back
+      [self bringToFront:recogniser.view];
+    }
+    self.lastPanLocation = CGPointZero;
+    self.startPanLocation = CGPointZero;
     return;
   }
   if (recogniser.state == UIGestureRecognizerStateBegan) {
-    self.startPanLocation = [recogniser translationInView:recogniser.view];
+    self.startPanLocation = location;
     return;
   }
   
-  CGPoint location = [recogniser translationInView:recogniser.view];
-  CGFloat moveDownBy = (location.y - self.startPanLocation.y);
-  recogniser.view.center = CGPointMake(recogniser.view.center.x, recogniser.view.center.y + moveDownBy);
-
-  self.startPanLocation = location;
+  if (!self.lastPanLocation.y == 0 ) {
+    recogniser.view.center = CGPointMake(recogniser.view.center.x, recogniser.view.center.y + movedDownBy);
+  }
+  self.lastPanLocation = location;
 }
-                                       
 
 @end
