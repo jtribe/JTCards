@@ -5,6 +5,7 @@ Add controllers and manage them as a stack of cards.
 
 The default layout and interaction behaviour is like Passbook.
 
+[Check out the demo video:](http://youtu.be/81RvFKFfCUk)
 
 How to use
 ==========
