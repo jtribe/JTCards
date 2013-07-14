@@ -16,6 +16,16 @@
 		8C5C9541178A3E1D00A0F42A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5C951C178A3E1D00A0F42A /* Foundation.framework */; };
 		8C5C9549178A3E1D00A0F42A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C9547178A3E1D00A0F42A /* InfoPlist.strings */; };
 		8C5C954C178A3E1D00A0F42A /* CardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C954B178A3E1D00A0F42A /* CardsTests.m */; };
+		8C644C0817926F53002D0EF7 /* bg_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0017926F53002D0EF7 /* bg_1.png */; };
+		8C644C0917926F53002D0EF7 /* bg_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0117926F53002D0EF7 /* bg_1@2x.png */; };
+		8C644C0A17926F53002D0EF7 /* bg_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0217926F53002D0EF7 /* bg_2.png */; };
+		8C644C0B17926F53002D0EF7 /* bg_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0317926F53002D0EF7 /* bg_2@2x.png */; };
+		8C644C0C17926F53002D0EF7 /* bg_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0417926F53002D0EF7 /* bg_3.png */; };
+		8C644C0D17926F53002D0EF7 /* bg_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0517926F53002D0EF7 /* bg_3@2x.png */; };
+		8C644C0E17926F53002D0EF7 /* bg_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0617926F53002D0EF7 /* bg_4.png */; };
+		8C644C0F17926F53002D0EF7 /* bg_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C0717926F53002D0EF7 /* bg_4@2x.png */; };
+		8C644C16179270D7002D0EF7 /* CardWithImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C644C14179270D7002D0EF7 /* CardWithImageViewController.m */; };
+		8C644C17179270D7002D0EF7 /* CardWithImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C644C15179270D7002D0EF7 /* CardWithImageViewController.xib */; };
 		8CC5AA10178AE17E00A83391 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA02178AE17E00A83391 /* AppDelegate.m */; };
 		8CC5AA11178AE17E00A83391 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5AA04178AE17E00A83391 /* BViewController.m */; };
 		8CC5AA12178AE17E00A83391 /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC5AA05178AE17E00A83391 /* BViewController.xib */; };
@@ -56,6 +66,17 @@
 		8C5C9548178A3E1D00A0F42A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C5C954A178A3E1D00A0F42A /* CardsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardsTests.h; sourceTree = "<group>"; };
 		8C5C954B178A3E1D00A0F42A /* CardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsTests.m; sourceTree = "<group>"; };
+		8C644C0017926F53002D0EF7 /* bg_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_1.png; sourceTree = "<group>"; };
+		8C644C0117926F53002D0EF7 /* bg_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_1@2x.png"; sourceTree = "<group>"; };
+		8C644C0217926F53002D0EF7 /* bg_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_2.png; sourceTree = "<group>"; };
+		8C644C0317926F53002D0EF7 /* bg_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_2@2x.png"; sourceTree = "<group>"; };
+		8C644C0417926F53002D0EF7 /* bg_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_3.png; sourceTree = "<group>"; };
+		8C644C0517926F53002D0EF7 /* bg_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_3@2x.png"; sourceTree = "<group>"; };
+		8C644C0617926F53002D0EF7 /* bg_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_4.png; sourceTree = "<group>"; };
+		8C644C0717926F53002D0EF7 /* bg_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_4@2x.png"; sourceTree = "<group>"; };
+		8C644C13179270D7002D0EF7 /* CardWithImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardWithImageViewController.h; sourceTree = "<group>"; };
+		8C644C14179270D7002D0EF7 /* CardWithImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardWithImageViewController.m; sourceTree = "<group>"; };
+		8C644C15179270D7002D0EF7 /* CardWithImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardWithImageViewController.xib; sourceTree = "<group>"; };
 		8CC5AA01178AE17E00A83391 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CC5AA02178AE17E00A83391 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8CC5AA03178AE17E00A83391 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
@@ -160,9 +181,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8C644BFF17926F53002D0EF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C644C0017926F53002D0EF7 /* bg_1.png */,
+				8C644C0117926F53002D0EF7 /* bg_1@2x.png */,
+				8C644C0217926F53002D0EF7 /* bg_2.png */,
+				8C644C0317926F53002D0EF7 /* bg_2@2x.png */,
+				8C644C0417926F53002D0EF7 /* bg_3.png */,
+				8C644C0517926F53002D0EF7 /* bg_3@2x.png */,
+				8C644C0617926F53002D0EF7 /* bg_4.png */,
+				8C644C0717926F53002D0EF7 /* bg_4@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8CC5AA00178AE17E00A83391 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				8C644BFF17926F53002D0EF7 /* Resources */,
 				8CC5AA01178AE17E00A83391 /* AppDelegate.h */,
 				8CC5AA02178AE17E00A83391 /* AppDelegate.m */,
 				8CC5AA03178AE17E00A83391 /* BViewController.h */,
@@ -180,6 +217,9 @@
 				8CC5AA56178B8C5100A83391 /* RootViewController.h */,
 				8CC5AA57178B8C5100A83391 /* RootViewController.m */,
 				8CC5AA58178B8C5100A83391 /* RootViewController.xib */,
+				8C644C13179270D7002D0EF7 /* CardWithImageViewController.h */,
+				8C644C14179270D7002D0EF7 /* CardWithImageViewController.m */,
+				8C644C15179270D7002D0EF7 /* CardWithImageViewController.xib */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -276,6 +316,15 @@
 				8CC5AA55178B848F00A83391 /* README.md in Resources */,
 				8CC5AA5A178B8C5100A83391 /* RootViewController.xib in Resources */,
 				8C24EFC4178CFAFB0066A187 /* JTCards.podspec in Resources */,
+				8C644C0817926F53002D0EF7 /* bg_1.png in Resources */,
+				8C644C0917926F53002D0EF7 /* bg_1@2x.png in Resources */,
+				8C644C0A17926F53002D0EF7 /* bg_2.png in Resources */,
+				8C644C0B17926F53002D0EF7 /* bg_2@2x.png in Resources */,
+				8C644C0C17926F53002D0EF7 /* bg_3.png in Resources */,
+				8C644C0D17926F53002D0EF7 /* bg_3@2x.png in Resources */,
+				8C644C0E17926F53002D0EF7 /* bg_4.png in Resources */,
+				8C644C0F17926F53002D0EF7 /* bg_4@2x.png in Resources */,
+				8C644C17179270D7002D0EF7 /* CardWithImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +394,7 @@
 				8CC5AA26178AE7A400A83391 /* JTCardsLayout.m in Sources */,
 				8CC5AA27178AE7A400A83391 /* JTCardsViewController.m in Sources */,
 				8CC5AA59178B8C5100A83391 /* RootViewController.m in Sources */,
+				8C644C16179270D7002D0EF7 /* CardWithImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

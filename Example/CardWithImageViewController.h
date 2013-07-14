@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface CardWithImageViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *cardImageView;
+@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
+@property (nonatomic,strong) NSString* headerText;
+@property (nonatomic,strong) NSString* contentText;
+@property (nonatomic,strong) UIImage* image;
 
 @end

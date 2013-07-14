@@ -12,5 +12,6 @@
 
 - (IBAction)defaultLayoutPressed:(id)sender;
 - (IBAction)customisedLayoutPressed:(id)sender;
+- (IBAction)oneMorePressed:(id)sender;
 
 @end
