@@ -11,7 +11,6 @@
 
 @interface JTCardsViewController ()
 @property BOOL showingAll;
-@property (nonatomic,strong) JTCardsLayout *layout;
 @end
 
 @implementation JTCardsViewController
@@ -31,14 +30,40 @@
   return [self initWithCards:cardControllers layout:nil];
 }
 
+// here for debugging purpouses
+- (void)updateViewConstraints {
+  [super updateViewConstraints];
+}
+
+// here for debugging purpouses
+- (void)viewWillLayoutSubviews {
+  [super viewWillLayoutSubviews];
+}
+
+// here for debugging purpouses
+- (void)viewDidLayoutSubviews {
+  [super viewDidLayoutSubviews];
+}
+
+- (void) loadView
+{
+  self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  // make sure we are using our own layout mechanism and now autolayout of subviews.
+  // This is important. Strange layout effects will happen if we use autolayout for the card views.
+  // If a card controller was created in IB then the size set in there should be the size we use here as the cards shows.
+  self.view.autoresizesSubviews = NO;
+}
+
 - (void)viewDidLoad
 {
   [super viewDidLoad];
 
   for (UIViewController *controller in self.cardControllers)
   {
+    [controller willMoveToParentViewController:self];
     [self addChildViewController:controller];
     [self.view addSubview:controller.view];
+    [controller didMoveToParentViewController:self];
   }
   
   NSMutableArray *views = [NSMutableArray array];

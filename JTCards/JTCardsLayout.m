@@ -59,10 +59,11 @@
   CGFloat availableHeigth = self.containerView.bounds.size.height - self.topMargin;
   CGFloat offset = (self.expandedSpacing? self.expandedSpacing : availableHeigth / [self.views count]);
   for (UIView *view in self.views) {
+    [self addPanGestureRecogniserToView:view];
     [self addTapGestureRecogniserToView:view];
     // force into container size if needed
     CGFloat w = view.frame.size.width > self.sizeToFit.width ? self.sizeToFit.width : view.frame.size.width;
-    CGFloat h = view.frame.size.height > self.sizeToFit.height ? self.sizeToFit.height : view.frame.size.height;
+    CGFloat h =  view.frame.size.height > self.sizeToFit.height ? self.sizeToFit.height : view.frame.size.height;// self.sizeToFit.height;
     CGFloat y = (offset * index) + self.topMargin;
     CGFloat x = view.superview.bounds.size.width/2 - w/2;
     CGRect rect = CGRectMake(x,y,w,h);
@@ -106,7 +107,6 @@
           view.center = CGPointMake(view.center.x, view.center.y - moveUpBy);
         }];
       }];
-      [self addPanGestureRecogniserToView:view];
       index++;
     }
   }

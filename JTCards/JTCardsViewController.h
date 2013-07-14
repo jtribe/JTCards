@@ -12,6 +12,7 @@
 @interface JTCardsViewController : UIViewController
 
 @property (nonatomic,strong) NSMutableArray *cardControllers;
+@property (nonatomic,strong) JTCardsLayout *layout;
 
 - (id) initWithCards:(NSArray*)cardControllers;
 - (id) initWithCards:(NSArray*)cardControllers layout:(JTCardsLayout*)layout;
