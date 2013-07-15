@@ -12,17 +12,20 @@
 
 @property CGPoint startPanLocation;
 @property CGPoint lastPanLocation;
-
+@property id<JTCardLayoutDelegate> delegateInFocus;
 
 @end
 
 @implementation JTCardsLayout
 
-- (id) initWithViews:(NSArray*)views containerView:(UIView*)containerView
+- (id) initWithViews:(NSArray*)views
+           delegates:(NSArray*)delegates
+       containerView:(UIView*)containerView
 {
   self = [super init];
   if (self) {
     self.views = views;
+    self.delegates = delegates;
     self.containerView = containerView;
     self.topMargin = 0.0;
     self.containerSize = self.containerView.bounds.size;
@@ -35,7 +38,7 @@
 
 - (id) init
 {
-  return [self initWithViews:nil containerView:nil];
+  return [self initWithViews:nil delegates:nil containerView:nil];
 }
 
 #pragma mark - accessors
@@ -48,6 +51,13 @@
 }
 
 #pragma mark - Logic
+// find the delegate to call and let know that it moved out of focus.
+- (id) delegateForView:(id)view
+{
+  NSInteger index = [self.views indexOfObject:view];
+  id<JTCardLayoutDelegate> delegate = [self.delegates objectAtIndex:index];
+  return delegate;
+}
 
 
 // layout is a function of the index of the child controller
@@ -58,7 +68,15 @@
   NSInteger index = 0;
   CGFloat availableHeigth = self.containerView.bounds.size.height - self.topMargin;
   CGFloat offset = (self.expandedSpacing? self.expandedSpacing : availableHeigth / [self.views count]);
+  // let delegate know it moved out of focus
+  if (self.delegateInFocus) {
+    if ([self.delegateInFocus respondsToSelector:@selector(movedOutOfFocus)]) {
+      [self.delegateInFocus movedOutOfFocus];
+    }
+    self.delegateInFocus = nil;
+  }
   for (UIView *view in self.views) {
+    
     [self addPanGestureRecogniserToView:view];
     [self addTapGestureRecogniserToView:view];
     // force into container size if needed
@@ -90,7 +108,14 @@
   [UIView animateWithDuration:0.3 delay:0.0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
     selectedView.center = CGPointMake(selectedView.superview.bounds.size.width/2, selectedView.bounds.size.height/2 + self.topMargin);
   } completion:^(BOOL finished) {
-    // done
+    // let the delegate know that it is in focus
+    id delegate = [self delegateForView:selectedView];
+    if (delegate) {
+      if ([delegate respondsToSelector:@selector(movedIntoFocus)]) {
+        [delegate movedIntoFocus];
+      }
+      self.delegateInFocus = delegate;
+    }
   }];
   
   // move the other views down

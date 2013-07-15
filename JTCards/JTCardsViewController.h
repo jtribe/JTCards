@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JTCardsLayout.h"
 
+
 @interface JTCardsViewController : UIViewController
 
 @property (nonatomic,strong) NSMutableArray *cardControllers;

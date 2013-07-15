@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @protocol JTCardLayoutDelegate <NSObject>
-
+- (void) movedIntoFocus;
+- (void) movedOutOfFocus;
 @end
 
 /* 
@@ -26,7 +27,7 @@
 // the reference view that contains all other views
 @property (nonatomic,strong) UIView *containerView;
 // the controller that uses the layout
-@property (nonatomic,weak) id<JTCardLayoutDelegate> delegate;
+@property (nonatomic,strong) NSArray *delegates;
 
 
 // top margin of focused card
@@ -40,8 +41,9 @@
 // the distance from the bottom the top collapsed card peeks out
 @property CGFloat peekFromBottom;
 
-
-- (id) initWithViews:(NSArray*)views containerView:(UIView*)containerView;
+- (id) initWithViews:(NSArray*)views
+           delegates:(NSArray*)delegates
+       containerView:(UIView*)containerView;
 - (void) layoutAllAnimated:(BOOL)animated;
 - (void) bringToFront:(UIView*)view;
 

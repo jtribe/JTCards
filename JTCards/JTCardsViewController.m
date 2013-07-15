@@ -57,7 +57,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-
+  
   for (UIViewController *controller in self.cardControllers)
   {
     [controller willMoveToParentViewController:self];
@@ -72,14 +72,15 @@
   }
   // create the default layout only if no layout was set during intialisation.
   if (!self.layout) {
-    self.layout = [[JTCardsLayout alloc] initWithViews:views containerView:self.view];
+    self.layout = [[JTCardsLayout alloc] initWithViews:views delegates:self.cardControllers containerView:self.view];
   }
   else {
     // the layout was already set so just add the views and container view to it.
     self.layout.views = views;
+    self.layout.delegates = self.cardControllers;
     self.layout.containerView = self.view;
   }
-
+  
 }
 
 - (void) viewWillAppear:(BOOL)animated
