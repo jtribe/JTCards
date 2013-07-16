@@ -9,11 +9,9 @@
 #import "JTCardsLayout.h"
 
 @interface JTCardsLayout ()
-
 @property CGPoint startPanLocation;
 @property CGPoint lastPanLocation;
 @property id<JTCardLayoutDelegate> delegateInFocus;
-
 @end
 
 @implementation JTCardsLayout
@@ -25,6 +23,7 @@
   self = [super init];
   if (self) {
     self.views = views;
+    [self addTapViews];
     self.delegates = delegates;
     self.containerView = containerView;
     self.topMargin = 0.0;
@@ -39,6 +38,35 @@
 - (id) init
 {
   return [self initWithViews:nil delegates:nil containerView:nil];
+}
+
+#pragma mark - augment views
+- (void)addTapViews {
+  for (UIView *view in self.views) {
+    UIView *tapView = [[UIView alloc] initWithFrame:view.bounds];
+    tapView.backgroundColor = [UIColor clearColor];
+    [view addSubview:tapView];
+    [self addTapGestureRecogniserToView:tapView];
+  }
+}
+
+- (void)removeTapViews {
+  for (UIView *view in self.views) {
+    // TODO: should we use a tag instead?
+    UIView *tapView = [view.subviews lastObject];
+    [tapView removeFromSuperview];
+  }
+}
+
+- (void) deactivateTapForView:(UIView*)view
+{
+  UIView *tapView = [view.subviews lastObject];
+  tapView.userInteractionEnabled = NO;
+}
+- (void) activateTapForView:(UIView*)view
+{
+  UIView *tapView = [view.subviews lastObject];
+  tapView.userInteractionEnabled = YES;
 }
 
 #pragma mark - accessors
@@ -75,11 +103,14 @@
     }
     self.delegateInFocus = nil;
   }
+  
   for (UIView *view in self.views) {
-    
-    [self addPanGestureRecogniserToView:view];
-    [self addTapGestureRecogniserToView:view];
     // force into container size if needed
+    [self activateTapForView:view];
+    
+    // (re)attach pan recogniser to view
+    [self addPanGestureRecogniserToView:view];
+
     CGFloat w = view.frame.size.width > self.sizeToFit.width ? self.sizeToFit.width : view.frame.size.width;
     CGFloat h =  view.frame.size.height > self.sizeToFit.height ? self.sizeToFit.height : view.frame.size.height;// self.sizeToFit.height;
     CGFloat y = (offset * index) + self.topMargin;
@@ -108,6 +139,7 @@
   [UIView animateWithDuration:0.3 delay:0.0 options:(UIViewAnimationOptionCurveEaseInOut) animations:^{
     selectedView.center = CGPointMake(selectedView.superview.bounds.size.width/2, selectedView.bounds.size.height/2 + self.topMargin);
   } completion:^(BOOL finished) {
+    [self deactivateTapForView:selectedView];
     // let the delegate know that it is in focus
     id delegate = [self delegateForView:selectedView];
     if (delegate) {
@@ -195,18 +227,20 @@
   }
   
   // or bring selected to front
-  UIView *view = recogniser.view;
+  // The (real) view is the superview. The recogniser was put on a child.
+  UIView *view = recogniser.view.superview;
   // bring to front
   if (view) {
     [self bringToFront:view];
-    [view removeGestureRecognizer:recogniser];
+//    [view removeGestureRecognizer:recogniser];
   }
 }
 
 #pragma mark pan
 - (void) panRecognised:(UIPanGestureRecognizer*)recogniser
 {
-  CGPoint location = [recogniser translationInView:recogniser.view];
+  UIView *view = recogniser.view;
+  CGPoint location = [recogniser translationInView:view];
   NSLog(@"%f, %f", location.x, location.y);
   
   CGFloat movedTotalDownBy = (location.y - self.startPanLocation.y);
@@ -221,7 +255,7 @@
     }
     else {
       // bounce back
-      [self bringToFront:recogniser.view];
+      [self bringToFront:view];
     }
     self.lastPanLocation = CGPointZero;
     self.startPanLocation = CGPointZero;
@@ -233,7 +267,7 @@
   }
   
   if (!self.lastPanLocation.y == 0 ) {
-    recogniser.view.center = CGPointMake(recogniser.view.center.x, recogniser.view.center.y + movedDownBy);
+    view.center = CGPointMake(view.center.x, view.center.y + movedDownBy);
   }
   self.lastPanLocation = location;
 }
