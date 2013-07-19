@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol JTCardLayoutDelegate <NSObject>
+// called when 
 - (void) movedIntoFocus;
 - (void) movedOutOfFocus;
 @end
@@ -23,7 +24,7 @@
 // showing all views or focusing on one?
 @property BOOL showingAll;
 // the views to layout
-@property (nonatomic,strong) NSArray *views;
+@property (nonatomic,strong) NSMutableArray *views;
 // the reference view that contains all other views
 @property (nonatomic,strong) UIView *containerView;
 // the controller that uses the layout
@@ -41,10 +42,17 @@
 // the distance from the bottom the top collapsed card peeks out
 @property CGFloat peekFromBottom;
 
-- (id) initWithViews:(NSArray*)views
-           delegates:(NSArray*)delegates
+// initialise with an array of controllers which are the cards
+// and a container view which should be the view of JTViewController
+- (id) initWithControllers:(NSArray*)controllers
        containerView:(UIView*)containerView;
+
+- (void) setupWithControllers:(NSArray*)controllers
+                containerView:(UIView*)containerView;
+
+// 
 - (void) layoutAllAnimated:(BOOL)animated;
+
 - (void) bringToFront:(UIView*)view;
 
 @end

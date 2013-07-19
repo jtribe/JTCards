@@ -71,6 +71,9 @@
   [self.navigationController pushViewController:controller animated:YES];
 }
 
+
+
+// This sample demonstrates how to configure the layout.
 - (IBAction)customisedLayoutPressed:(id)sender {
   NSMutableArray *cards = [NSMutableArray array];
   {
@@ -97,15 +100,22 @@
       [cards addObject:controller];
     }
   }
-  JTCardsLayout *layout = [[JTCardsLayout alloc] init];
+  // create a cards controller without layout. We add the layout later.
+  JTCardsViewController *cardsController = [[JTCardsViewController alloc] initWithCards:cards];
+  cardsController.title = @"Customised Layout";
+  
+  JTCardsLayout *layout = [[JTCardsLayout alloc] initWithControllers:cards containerView:cardsController.view];
+  // now configure the layout
   layout.topMargin = 10.0;
   layout.containerSize = CGSizeMake(200, 350);
   layout.collapsedSpacing = 20.0;
   layout.peekFromBottom = 40.0;
   layout.expandedSpacing = 40.0;
-  JTCardsViewController *controller = [[JTCardsViewController alloc] initWithCards:cards layout:layout];
-  controller.title = @"Customised Layout";
-  [self.navigationController pushViewController:controller animated:YES];
+  
+  // add the layout to the cards controller
+  cardsController.layout = layout;
+  
+  [self.navigationController pushViewController:cardsController animated:YES];
 
 }
 

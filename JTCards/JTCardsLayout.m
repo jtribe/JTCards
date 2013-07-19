@@ -12,22 +12,18 @@
 @property CGPoint startPanLocation;
 @property CGPoint lastPanLocation;
 @property id<JTCardLayoutDelegate> delegateInFocus;
+@property BOOL tabViewsAdded;
 @end
 
 @implementation JTCardsLayout
 
-- (id) initWithViews:(NSArray*)views
-           delegates:(NSArray*)delegates
+- (id) initWithControllers:(NSArray*)controllers
        containerView:(UIView*)containerView
 {
   self = [super init];
   if (self) {
-    self.views = views;
-    [self addTapViews];
-    self.delegates = delegates;
-    self.containerView = containerView;
+    [self setupWithControllers:controllers containerView:containerView];
     self.topMargin = 0.0;
-    self.containerSize = self.containerView.bounds.size;
     self.collapsedSpacing = 5.0;
     self.peekFromBottom = 50.0;
     self.expandedSpacing = 0.0;
@@ -35,19 +31,30 @@
   return self;
 }
 
-- (id) init
+- (void) setupWithControllers:(NSArray*)controllers
+                containerView:(UIView*)containerView
 {
-  return [self initWithViews:nil delegates:nil containerView:nil];
+  self.views = [NSMutableArray array];
+  for (UIViewController *controller in controllers) {[self.views addObject:controller.view];}
+  self.delegates = controllers;
+  self.containerView = containerView;
+  self.containerSize = self.containerView.bounds.size;
+
+  [self addTapViews];
+
 }
 
 #pragma mark - augment views
 - (void)addTapViews {
+  if (self.tabViewsAdded) return;
+  
   for (UIView *view in self.views) {
     UIView *tapView = [[UIView alloc] initWithFrame:view.bounds];
     tapView.backgroundColor = [UIColor clearColor];
     [view addSubview:tapView];
     [self addTapGestureRecogniserToView:tapView];
   }
+  self.tabViewsAdded = YES;
 }
 
 - (void)removeTapViews {
